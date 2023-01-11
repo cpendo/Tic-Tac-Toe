@@ -1,4 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Finger Paint', cursive;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #8A897C;
+    color: #353535;
+}
+.main{
+    background-color: #ffffff;
+}
+.message{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 10px;
+    font-family: 'Lilita One', cursive;
+    color: #353535;
+    letter-spacing: 1.3px;
+}
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    width: 30vw;
+    height: 30vw;
+    margin: 0 auto;
+    border: 2px solid #4c4c4c;
+}
+.grid-item {
+    border: 1px solid #4c4c4c;
+    text-align: center;
+    
+}
+.grid-item:hover{
+    background-color: #D2D7DF;
+}
+.button{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restart{
+    padding: 10px;
+    font-family: 'Lilita One', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    background-color: #8A897C;
+    color: #353535;
+    border: none;
+    border-radius: 10px;
 }
